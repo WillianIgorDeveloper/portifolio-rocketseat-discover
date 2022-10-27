@@ -1,0 +1,135 @@
+:root {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  /* Colors */
+  --gray-20: rgba(255, 255, 255, 0.20);
+  --gray-50: rgba(255, 255, 255, 0.50);
+  --gray-70: rgba(255, 255, 255, 0.70);
+  --gray-500: #303030;
+  --gray-700: #222222;
+  --gray-800: #202020;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  display: flex;
+}
+
+.infos {
+  width: 426px;
+}
+
+.infos div {
+  width: 80%;
+  padding: 1rem 1rem;
+  margin: 1rem 0;
+
+  background-color: var(--gray-500);
+  border-radius: .75rem;
+}
+
+.infos div:hover {
+  box-shadow: 0 0 .5rem var(--gray-20);
+}
+
+.infos .lead-wrapper {
+  text-align: center;
+}
+
+.infos .lead-wrapper img {
+  width: 8rem;
+  border-radius: 50%;
+  box-shadow: 0 0 1rem var(--gray-50);
+}
+
+.infos .lead-wrapper h1 {
+  margin: 1rem 0 .5rem 0;
+  font-weight: 500;
+}
+
+.infos .lead-wrapper p {
+  font-weight: 300;
+}
+
+.infos .links-wrapper ul {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.infos .links-wrapper ul li {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+
+  font-size: .75rem;
+  color: var(--gray-70);
+}
+
+.infos .links-wrapper ul li:hover {
+  transform: rotate(1deg) scale(1.05, 1.05);
+}
+
+.infos .links-wrapper ul li:active {
+  transform: rotate(-1deg) scale(0.9, 0.9);
+}
+
+.infos .links-wrapper ul li i {
+  font-size: 1.5rem;
+}
+
+.infos .links-wrapper ul li a {
+  color: var(--gray-70);
+}
+
+.infos .links-wrapper ul li a:visited {
+  color: var(--gray-20);
+}
+
+.infos .skils-wrapper h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.infos .skils-wrapper ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.infos .skils-wrapper ul li {
+  padding: .5rem 1rem;
+
+  background-color: var(--gray-700);
+  border-radius: 1rem;
+
+  font-weight: 300;
+}
+
+.content {
+  flex: 1;
+}
